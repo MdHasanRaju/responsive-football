@@ -343,12 +343,19 @@ footer p{
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+    margin-top: 15px;
 }
 .social-icon a{
     color: #969BAB;
     padding: 16px;
     border-radius: 50%;
     margin-left: 14px;
+    background: #ddd;
+    transition: .5s;
+}
+.social-icon a:hover{
+    background-color: #ff005d;
+    color: #fff;
 }
 .social-icon a:first-child{
     margin-left: 0px;
@@ -362,7 +369,11 @@ footer p{
 /*======= Tablet Device ======= */
 
 
-@media only screen and (min-width:689px) and (max-width:992px){
+@media only screen and (max-width:992px){
+    .container{
+        width: 90%;
+    }
+
     .mobile-menu{
             display: inline-block;
             height: 24px;
@@ -370,9 +381,6 @@ footer p{
         }
     nav .menu-items a{
         display: none;
-    }
-    .container{
-        width: 90%;
     }
 
     nav .login a {
@@ -474,18 +482,7 @@ footer p{
 
 @media only screen and (max-width:688px) {
 
-        .container{
-            width: 90%;
-            
-        }
-        .mobile-menu{
-            display: inline-block;
-            height: 24px;
-            width: 24px;
-        }
-        nav .menu-items a{
-            display: none;
-        }
+
         .banner-title {
             width: 278px;
             margin-bottom: 50px;
