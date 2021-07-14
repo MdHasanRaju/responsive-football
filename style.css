@@ -215,7 +215,7 @@ nav .login i{
 }
 
 /*------------------
-  partner-section
+  Partner-section
 -------------------- */
 .partner-section{
     padding-bottom: 40px;
@@ -314,7 +314,7 @@ td img {
 
 
 /*-------------
-    footer
+    Footer
  -------------- */
 
 footer {
@@ -354,10 +354,10 @@ footer p{
     margin-left: 0px;
 }
 .social-icon i{}
-/*-----------------
-   media-query
------------------*/
 
+/*-----------------------------------------------------------------
+                            Responsive CSS
+------------------------------------------------------------------*/
 
 /*======= Tablet Device ======= */
 
