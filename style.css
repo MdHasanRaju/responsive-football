@@ -37,7 +37,10 @@ nav {
     align-items: center;  
     height: 44px;  
 }
-
+.mobile-menu{
+    display: none;
+    color: #fff;
+}
 nav .menu-items a{
 
     color: #FFFFFF;
@@ -208,7 +211,7 @@ nav .login i{
 
 .highlight-image img{
     width: 567px;
-    height: 427px;
+  
 }
 
 /*------------------
@@ -225,6 +228,13 @@ nav .login i{
     color: #0E347D;
     margin-bottom: 40px;
     font-size: 30px;
+}
+
+.partner-section {
+    padding-bottom: 40px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .partner-logos{
@@ -331,3 +341,101 @@ footer p{
     font-size: 18px;
     line-height: 24px;
 }
+
+/*-----------------
+   media-query
+-----------------*/
+
+@media only screen and (max-width:688px) {
+
+        .container{
+            width: 90%;
+            
+        }
+        .mobile-menu{
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+        }
+        nav .menu-items a{
+            display: none;
+        }
+        .banner-title {
+            width: 278px;
+            margin-bottom: 50px;
+        }
+        .banner-title h1 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 50px;
+            color: #FFFFFF;
+            padding-bottom: 20px;
+        }
+        .banner-image img {
+            width: 329px;
+        }
+
+        .players {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .banner-container{
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .highlight {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .highlight-detail {
+            width: 100%;
+            margin-bottom: 29px;
+
+        }
+
+        .highlight-detail h2{
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        .highlight-image img {
+                width: 100%;
+
+        }
+
+        .partner-logos-items {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 80px;
+            grid-row-gap: 40px;
+        }
+
+        .rankings {
+               grid-template-columns: repeat(1, 1fr);
+               grid-row-gap:30px;
+        }
+        
+        .ranking-title {
+                text-align: center;
+        }
+
+        .table-ranking h3{           
+                text-align: center;
+                margin-left: 0px;
+                padding-top: 24px;
+        }
+
+        footer{
+                padding-top: 50px;
+        }
+
+        .footer-top img{
+            width: 365.87px;
+        }
+
+}
+
