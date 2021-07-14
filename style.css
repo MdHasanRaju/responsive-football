@@ -42,7 +42,6 @@ nav {
     color: #fff;
 }
 nav .menu-items a{
-
     color: #FFFFFF;
     font-style: normal;
     font-weight: 500;
@@ -50,7 +49,9 @@ nav .menu-items a{
     line-height: 24px;
     text-decoration: none;
 }
-
+nav .menu-items a:hover {
+    color: #ff005c;
+}
 nav .menu-items > a{
     padding: 20px;
 }
@@ -63,7 +64,9 @@ nav .login a{
     text-decoration: none;
     padding: 10px 24px;
 }
-
+nav .login a:hover{
+    background-color: #ff005d;
+}
 nav .login i{
     margin-right: 5px;
 }
@@ -111,10 +114,7 @@ nav .login i{
 }
 
 .button-color:hover{
-    background-color: green;
-    
-  
-    
+    background-color: #ff005d;
 }
 
 .button-color i{
