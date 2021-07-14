@@ -102,7 +102,7 @@ nav .login i{
     background: #da3d76;
     color: #FFFFFF;
     font-size: 16px;
-    font: 500;
+    font-weight: 500;
     text-decoration: none;
     padding: 10px 24px;
     display: inline-block;
@@ -225,7 +225,7 @@ nav .login i{
 
 .partner-section h2 {
     text-align: center;
-    color: #0E347D;
+    color: #000000;
     margin-bottom: 40px;
     font-size: 30px;
 }
@@ -317,14 +317,17 @@ td img {
     footer
  -------------- */
 
-footer{
+footer {
+    display: flex;
+    padding-top: 158px;
+    padding-bottom: 63px;
+    justify-content: center;
+}
+.footer-container{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 158px;
-    padding-bottom: 63px;
 }
-
 .footer-top img{
     height: 110px;
     width: 483.87px;
@@ -341,10 +344,133 @@ footer p{
     font-size: 18px;
     line-height: 24px;
 }
-
+.social-icon a{
+    color: #969BAB;
+    padding: 16px;
+    border-radius: 50%;
+    margin-left: 14px;
+}
+.social-icon a:first-child{
+    margin-left: 0px;
+}
+.social-icon i{}
 /*-----------------
    media-query
 -----------------*/
+
+
+/*======= Tablet Device ======= */
+
+
+@media only screen and (min-width:689px) and (max-width:992px){
+    .mobile-menu{
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+        }
+    nav .menu-items a{
+        display: none;
+    }
+    .container{
+        width: 90%;
+    }
+
+    nav .login a {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    nav .menu-items > a {
+        padding: 16px;
+    }
+
+    .banner-title {
+        width: 330px;
+    }
+
+    .banner-title h1 {
+        font-size: 42px;
+        line-height: 62px;
+    }
+
+    .banner-image img {
+        width: 349px;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlights-section {
+        padding-top: 100px;
+    }
+
+    .highlight-detail {
+    width: 300px;
+    }
+
+    .highlight h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .highlight p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 12px;
+    }
+
+    .highlight-image img {
+        width: 360px;
+    }
+
+    .button-color {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+    .partner-section {
+        padding-top: 70px;
+    }
+
+    .partner-section h2 {
+        margin-bottom: 5px;
+    }
+
+    .partner-logos-items {
+        grid-column-gap: 100px;
+        grid-row-gap: 45px;
+    }
+
+    .ranking-section {
+        padding-top: 60px;
+    }
+    .rankings {
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap:30px;
+    }
+    
+    .ranking-title {
+            text-align: center;
+    }
+    .table-ranking table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+    }
+    .table-ranking h3 {
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    footer {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+}
+
+/*======= Mobile Device ======= */
 
 @media only screen and (max-width:688px) {
 
@@ -413,6 +539,9 @@ footer p{
             grid-column-gap: 80px;
             grid-row-gap: 40px;
         }
+        .ranking-section {
+            padding-top: 60px;
+        }
 
         .rankings {
                grid-template-columns: repeat(1, 1fr);
@@ -422,20 +551,26 @@ footer p{
         .ranking-title {
                 text-align: center;
         }
-
-        .table-ranking h3{           
-                text-align: center;
-                margin-left: 0px;
-                padding-top: 24px;
+        .table-ranking table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+        .table-ranking h3 {
+            text-align: center;
+            margin-left: 0px;
+            margin-top: 25px;
+            margin-bottom: 25px;
         }
 
         footer{
                 padding-top: 50px;
         }
 
-        .footer-top img{
-            width: 365.87px;
+        .footer-top img {
+            width: 100%;
         }
 
 }
+
 
