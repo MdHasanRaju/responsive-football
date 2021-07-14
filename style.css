@@ -174,10 +174,11 @@ nav .login i{
   highlight-section 
 ---------------------*/
 
-.highlights-section{
+.highlights-section {
     display: flex;
     justify-content: center;
     padding-top: 165px;
+    padding-bottom: 50px;
 }
 
 .highlight-detail{
@@ -209,6 +210,98 @@ nav .login i{
     width: 567px;
     height: 427px;
 }
+
+/*------------------
+  partner-section
+-------------------- */
+.partner-section{
+    padding-bottom: 40px;
+    padding-top: 100px;
+    
+}
+
+.partner-section h2 {
+    text-align: center;
+    color: #0E347D;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.partner-logos{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+
+}
+
+.partner-logos-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 350px;
+    grid-row-gap: 40px;
+}
+
+/*----------------- 
+  ranking-section
+------------------- */
+
+.ranking-section{
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+}
+
+.ranking-container{}
+
+.rankings{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ranking-title{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.ranking-title h2{
+    margin-bottom: 26px;
+
+}
+
+.ranking-title p {
+    color: #505b73;
+    font-size: 24px;
+}
+
+.table-ranking{}
+
+.table-ranking h3{
+
+    padding-bottom: 15px;
+    margin-left: 30px;
+}
+
+.table-ranking table{
+    border-collapse: collapse;
+}
+
+td,th{
+    padding: 2em;
+    border-bottom: 1px solid #ddd;
+}
+
+td img {
+    width: 35px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+
+.womens-ranking{}
+
 
 /*-------------
     footer
