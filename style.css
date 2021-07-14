@@ -511,7 +511,10 @@ footer p{
             align-items: flex-start;
             flex-direction: column;
         }
-
+        
+        .highlights-section {
+            padding-top: 100px;
+        }
         .highlight {
             display: flex;
             align-items: center;
